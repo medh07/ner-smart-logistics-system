@@ -34,30 +34,37 @@ In the North Eastern Region (NER) of India, severe monsoons, cloudbursts, and la
 NER Smart Logistics solves this through an API-First, Dual-Ecosystem Architecture that connects live ground-truth verification with high-level strategic disaster management:
 
 
- ──                           ────────────────────────────────────────────┐
-                          │     📱 Field Officers & Driver PWA           │
-                          │   (Offline-First / EXIF Geo-Tagged Upload)   │
-                          └──────────────────────┬───────────────────────┘
-                                                 │
-                                                 ▼
-┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                   ⚡ SUPABASE REALTIME BAAS LAYER                             │
-│                (RESTful APIs • WebSockets • PostgreSQL / PostGIS • Row-Level Security)         │
-└────────────────────────────────────────┬───────────────────────────────────────────────┬───────┘
-                                         │                                               │
-                                         ▼                                               ▼
-┌────────────────────────────────────────────────────────┐   ┌───────────────────────────────────┐
-│              🤖 AI RISK PREDICTION ENGINE              │   │     📍 OSRM DYNAMIC ROUTING      │
-│  (6-Hr Pre-Emptive Forecasts & Multi-Factor Scoring)   │   │  (Vehicle Axle & Weight Limits)   │
-└────────────────────────────────────────┬───────────────┘   └───────────────────┬───────────────┘
-                                         │                                       │
-                                         └───────────────────┬───────────────────┘
-                                                             │
-                                                             ▼
-                          ┌──────────────────────────────────────────────┐
-                          │    🏛️ Central Command Hub (Mother Dashboard) │
-                          │     (MDoNER / DDMA / Police / BRO Portal)    │
-                          └──────────────────────────────────────────────┘   
+┌─────────────────────────────────────────────────────────────┐
+│          📱 FIELD OFFICERS & DRIVER PWA                    │
+│     Offline-First • EXIF Geo-Tagged Uploads                │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                               ▼
+┌─────────────────────────────────────────────────────────────┐
+│              ⚡ SUPABASE REALTIME BaaS LAYER               │
+│  REST APIs • WebSockets • PostgreSQL/PostGIS • RLS         │
+└──────────────────────────────┬──────────────────────────────┘
+                               │
+                    ┌──────────┴──────────┐
+                    │                     │
+                    ▼                     ▼
+┌──────────────────────────────┐  ┌───────────────────────────┐
+│ 🤖 AI RISK PREDICTION ENGINE │  │ 📍 OSRM DYNAMIC ROUTING   │
+│                              │  │                           │
+│ • 6-Hr Pre-Emptive Forecasts│  │ • Axle Weight Limits     │
+│ • Multi-Factor Risk Scoring  │  │ • Vehicle Restrictions   │
+└───────────────┬──────────────┘  └─────────────┬─────────────┘
+                │                               │
+                └───────────────┬───────────────┘
+                                │
+                                ▼
+┌─────────────────────────────────────────────────────────────┐
+│       🏛️ CENTRAL COMMAND HUB — MOTHER DASHBOARD            │
+│                                                            │
+│        MDoNER • DDMA • Police • BRO Portal                 │
+│                                                            │
+│   Real-Time Monitoring • Risk Alerts • Route Intelligence  │
+└─────────────────────────────────────────────────────────────┘
 
 
 
@@ -89,19 +96,13 @@ sequenceDiagram
 Our platform design is validated against official geological, agricultural, and logistics research data:
 
 
-+----------------------------------------------------------------------------------------------------+
-| 📍 GEOLOGICAL RISKS      | 0.18 Million Sq. Km of NE India lies in high-risk landslide zones       |
-|                          | Source: Geological Survey of India (GSI)                                 |
-+--------------------------+-------------------------------------------------------------------------+
-| 🚜 ECONOMIC LOSSES       | ₹1.53 Lakh Crore lost annually in India due to transit delays            |
-|                          | Source: NABCONS / ICAR National Study                                   |
-+--------------------------+-------------------------------------------------------------------------+
-| 🌾 REGIONAL DISPARITY    | 6.07% Paddy Loss in Assam due to monsoon flood blockages                |
-|                          | Source: NABCONS Report (vs. 2.87% Flat State Avg)                       |
-+--------------------------+-------------------------------------------------------------------------+
-| ⚡ AI REROUTING BENEFIT  | 20% to 35% Travel Time Saved via dynamic real-time GIS rerouting        |
-|                          | Source: IEEE / Transportation Research Studies                          |
-+----------------------------------------------------------------------------------------------------+
+| **Category**               | **Key Statistic / Impact**                                            | **Source / Reference**                      |
+| -------------------------- | --------------------------------------------------------------------- | ------------------------------------------- |
+| 📍 **GEOLOGICAL RISKS**    | **0.18 Million Sq. Km** of NE India lies in high-risk landslide zones | Geological Survey of India (GSI)            |
+| 🚜 **ECONOMIC LOSSES**     | **₹1.53 Lakh Crore** lost annually in India due to transit delays     | NABCONS / ICAR National Study               |
+| 🌾 **REGIONAL DISPARITY**  | **6.07% Paddy Loss** in Assam due to monsoon flood blockages          | NABCONS Report *(vs. 2.87% Flat State Avg)* |
+| ⚡ **AI REROUTING BENEFIT** | **20%–35% Travel Time Saved** via dynamic real-time GIS rerouting     | IEEE / Transportation Research Studies      |
+
 
 
 
