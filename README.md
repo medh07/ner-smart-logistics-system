@@ -23,6 +23,7 @@
 
 **Team Member:** Kumkum Thakur
 
+
 ### Problem Focus
 
 Developing an intelligent logistics and accessibility platform for improving transportation planning and operational decision-making across India's North Eastern Region (NER), considering difficult terrain, weather disruptions, infrastructure limitations and accessibility constraints.
