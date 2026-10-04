@@ -12,10 +12,15 @@
 ### Team Members
 
 **Team Leader:** Medhansh Garg
+
 **Team Member:** Krish Bharti
+
 **Team Member:** Prateek Sangwan
+
 **Team Member:** Vivaan Tamrakar
+
 **Team Member:** Mayank Aggarwal
+
 **Team Member:** Kumkum Thakur
 
 ### Problem Focus
