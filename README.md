@@ -9,6 +9,15 @@
 **Problem Statement:** SIH26002  
 **Project:** NER Smart Logistics
 
+### Team Members
+
+**Team Leader:** Medhansh Garg
+**Team Member:** Krish Bharti
+**Team Member:** Prateek Sangwan
+**Team Member:** Vivaan Tamrakar
+**Team Member:** Mayank Aggarwal
+**Team Member:** Kumkum Thakur
+
 ### Problem Focus
 
 Developing an intelligent logistics and accessibility platform for improving transportation planning and operational decision-making across India's North Eastern Region (NER), considering difficult terrain, weather disruptions, infrastructure limitations and accessibility constraints.
