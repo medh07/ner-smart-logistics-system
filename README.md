@@ -903,5 +903,5 @@ Combine:
 ### **Plan Smarter. Move Safer. Stay Connected.**
 
 **Smart India Hackathon 2026 — SIH26002**
-## Prototype Video Link - 
-## App Github repository link - 
+## Prototype Video Link - https://youtu.be/EKm7xaS8Lfs
+## App Github repository link - https://github.com/krish7e/ner-smart-logistics.git
